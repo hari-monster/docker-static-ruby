@@ -1,0 +1,9 @@
+version: '3'
+services:
+  sass:
+    build: ./container/ruby
+    container_name: sass
+    volumes:
+      - ${PROJECT_PATH}:/var/www/scss
+    stdin_open: true
+    tty: true
